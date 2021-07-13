@@ -1,5 +1,5 @@
-# API-STOCK
-## Api useful  to get stock data
+# API STOCK
+## Api useful to get stock data
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
@@ -16,10 +16,10 @@ API-STOCK uses a number of open source projects to work properly:
 
 ## Installation
 
-API-STOCK requires [Python](python.org)  v3x to run.
+API STOCK requires [Python](python.org)  v3x to run.
 Install 
 ```
-pip install api-stock==0.1
+pip install apiStock
 ```
 
 #### Building for source
