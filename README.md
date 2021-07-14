@@ -5,7 +5,7 @@
 
 ## Installation
 
-API STOCK requires [Python 3](python.org)  to run.
+API STOCK requires [Python 3](https://www.python.org/)  to run.
 Install 
 ```
 pip install apiStock
