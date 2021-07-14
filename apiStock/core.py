@@ -7,13 +7,14 @@ KEYS = ['date', 'ceilingPrice', 'floorPrice', 'open',
         'high', 'low', 'close', 'average', 'change']
 
 
-def getAllHistoryPrices(code, start, end):
+def getStockHistory(code, start_date, end_date):
     try:
-        r = requests.get(URL % (code, start, end))
+        r = requests.get(URL % (code, start_date, end_date))
         res = r.json()
     except Exception as e:
-        return {'status': 'Error', 'message': e, 'data': []}
+        return []
     if 'data' in res and len(res['data']) > 0:
         res = list(map(lambda x: DICT_FILTER(x, KEYS), res['data']))
-        return {'status': 'OK', 'message': 'Success', 'data': res}
-    return {'status': 'Not Found', 'message': 'No Data', 'data': []}
+        res.reverse()
+        return res
+    return []

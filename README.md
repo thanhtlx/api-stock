@@ -1,39 +1,24 @@
 # API STOCK
-## Api useful to get stock data
+## Api Useful To Get Historical Stock Price Values
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
-## Features
-
-- Get Historical Stock Price Values 
-
-## Tech
-
-API-STOCK uses a number of open source projects to work properly:
-
-- Python
-
-
 ## Installation
 
-API STOCK requires [Python](python.org)  v3x to run.
+API STOCK requires [Python 3](python.org)  to run.
 Install 
 ```
 pip install apiStock
 ```
-
-#### Building for source
-
-For production release:
-
-```sh
-gulp build --prod
-```
-
-Generating pre-built zip archives for distribution:
-
-```sh
-gulp build dist --prod
+#### Featured Methods
+1. getStockHistory(code, start_date, end_date)
+   - code stock in Vietnam Stock Market.
+   - start_date should be entered in the ‘YYYY-MM-DD’ format and is the first day that data will be pulled for.
+   - end_date should be entered in the ‘YYYY-MM-DD’ format and is the last day that data will be pulled for.
+#### Use
+```python
+from apiStock import getStockHistory
+vin_prices = getStockHistory('VIN', '2019-08-19', '2020-08-19')
 ```
 
 ## License

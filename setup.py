@@ -10,9 +10,9 @@ NAME = 'apiStock'
 DESCRIPTION = 'Api useful to get stock data'
 URL = 'https://github.com/thanhtlx/api-stock'
 EMAIL = 'thanh1908.xx@gmail.com'
-AUTHOR = 'Awesome Soul'
+AUTHOR = 'thanhtlx'
 REQUIRES_PYTHON = '>=3.6.0'
-VERSION = '0.1'
+VERSION = '0.2'
 
 REQUIRED = [
     'requests',
@@ -87,6 +87,7 @@ setup(
     install_requires=REQUIRED,
     include_package_data=True,
     license='MIT',
+    keywords=['api', 'stock', 'stock vietnam', 'historical stock'],
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Topic :: Software Development :: Build Tools',
