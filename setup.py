@@ -12,7 +12,7 @@ URL = 'https://github.com/thanhtlx/api-stock'
 EMAIL = 'thanh1908.xx@gmail.com'
 AUTHOR = 'thanhtlx'
 REQUIRES_PYTHON = '>=3.6.0'
-VERSION = '0.2'
+VERSION = '0.3'
 
 REQUIRED = [
     'requests',
