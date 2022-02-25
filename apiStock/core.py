@@ -1,6 +1,6 @@
 import requests
 import random
-from const import USER_AGENTS
+from .const import USER_AGENTS
 
 URL = 'https://finfo-api.vndirect.com.vn/v4/stock_prices?sort=date&q=code:%s~date:gte:%s~date:lte:%s&size=100000'
 def DICT_FILTER(x, y): return dict([(i, x[i]) for i in x if i in set(y)])
