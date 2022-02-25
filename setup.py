@@ -12,7 +12,7 @@ URL = 'https://github.com/thanhtlx/api-stock'
 EMAIL = 'thanh1908.xx@gmail.com'
 AUTHOR = 'thanhtlx'
 REQUIRES_PYTHON = '>=3.6.0'
-VERSION = '0.3'
+VERSION = '0.4'
 
 REQUIRED = [
     'requests',
@@ -105,3 +105,7 @@ setup(
         'upload': UploadCommand,
     },
 )
+
+# run 2 lenh upload pypi
+# python setup.py sdist bdist_wheel
+# twine upload dist/*
