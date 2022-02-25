@@ -7,7 +7,8 @@ def DICT_FILTER(x, y): return dict([(i, x[i]) for i in x if i in set(y)])
 
 
 KEYS = ['date', 'ceilingPrice', 'floorPrice', 'open',
-        'high', 'low', 'close', 'average', 'change']
+        'high', 'low', 'close', 'average', 'change',
+        "nmVolume"]
 
 
 def getStockHistory(code, start_date, end_date):
